@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tarjeta-moto {
+  position: relative;
+  width: 100%;
+  max-width: 480px; 
+  height: 100vh;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.imagen-moto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.opciones {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.opciones button {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.opciones button:hover {
+  background-color: #e0e0e0;
+}
+
+
+.op_correcta {
+  background-color: #4CAF50 !important; 
+  color: white;
+}
+
+.op_false {
+  background-color: #f44336 !important; 
+  color: white;
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.95); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+#overlay button {
+  background-color: #28a745; 
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  transition: background-color 0.3s ease;
+  font-size: 3rem;
+  text-shadow: 0 0 2px black;
+
+}
+
+#overlay button:hover {
+  background-color: #218838; 
+}
