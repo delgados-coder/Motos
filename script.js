@@ -114,9 +114,13 @@ function cargarOpciones() {
     const correcta = Object.values(Motos_Seleccionadas).find(m => m.correcta);
     imagenMoto.src = correcta.Imagen;
 
+    // Mostrar la marca de la moto correcta
+    const marcaCorrecta = document.querySelector('.marca-correcta');
+    marcaCorrecta.textContent = correcta.marca;
+
     Object.keys(Motos_Seleccionadas).forEach((key, index) => {
         const moto = Motos_Seleccionadas[key];
-        const texto = `${moto.marca} ${moto.modelo} ${moto.cilindrada}`;
+        const texto = `${moto.modelo} ${moto.cilindrada}`;
         const btn = btns[index];
 
         btn.textContent = texto;

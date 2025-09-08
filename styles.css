@@ -32,18 +32,18 @@ body {
 
 .opciones {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .opciones button {
   background-color: rgba(255, 255, 255, 0.9);
-  border: none;
+  border: solid 1px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   padding: 0.7rem;
   font-size: 1rem;
@@ -52,7 +52,7 @@ body {
 }
 
 .opciones button:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -88,11 +88,23 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.7);
   transition: background-color 0.3s ease;
-  font-size: 3rem;
+  font-size: 16px;
   text-shadow: 0 0 2px black;
 
 }
 
 #overlay button:hover {
   background-color: #218838; 
+}
+
+.marca-correcta {
+  position: absolute;
+  top: 70%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); 
+  z-index: 10; 
 }
