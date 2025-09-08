@@ -3,26 +3,26 @@ let sonidoCorrecto;
 let sonidoIncorrecto;
 
 const Motos = [
-    { marca: 'Zanella', modelo: 'ZB RT FULL', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBRTFULL110.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZB LT BASE', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBLTBASE110.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZB Turning', cilindrada: '125cc', Imagen: './assets/images/ZanellaZBRTurning125.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'DUE', cilindrada: '110cc', Imagen: './assets/images/ZanellaDUE110.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'HOT', cilindrada: '90cc', Imagen: './assets/images/ZanellaHOT90.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZB Z3 F', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBZ3F110.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZT', cilindrada: '150cc', Imagen: './assets/images/ZanellaZT150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZR LT', cilindrada: '250cc', Imagen: './assets/images/ZanellaZRLT250.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'ZR OHC', cilindrada: '200cc', Imagen: './assets/images/ZanellaOHCT200.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Ceccato', cilindrada: '150cc', Imagen: './assets/images/ZanellaCeccatoR150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Sapucai FULL', cilindrada: '150cc', Imagen: './assets/images/ZanellaSapucaiFULL150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'RX R7 FULL', cilindrada: '150cc', Imagen: './assets/images/ZanellaRXZ7FULL150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Ceccato X', cilindrada: '250cc', Imagen: './assets/images/ZanellaCeccatoX250.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Ceccato Serie 60', cilindrada: '', Imagen: './assets/images/ZanellaCeccatoSerie60.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Patagonian Eagle ST', cilindrada: '150cc', Imagen: './assets/images/ZanellaPatagonianEagleST150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Cruiser X1', cilindrada: '170cc', Imagen: './assets/images/ZanellaCruiserX1170.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Styler Exclusive', cilindrada: '150cc', Imagen: './assets/images/ZanellaStylerExclusive150.WEBP' },//👌
-    { marca: 'Zanella', modelo: 'Cruiser X', cilindrada: '150cc', Imagen: './assets/images/ZanellaCruiserX150.WEBP' },//👌
+    { marca: 'Zanella', modelo: 'ZB RT FULL', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBRTFULL110.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZB LT BASE', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBLTBASE110.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZB Turning', cilindrada: '125cc', Imagen: './assets/images/ZanellaZBRTurning125.webp' },//👌
+    { marca: 'Zanella', modelo: 'DUE', cilindrada: '110cc', Imagen: './assets/images/ZanellaDUE110.webp' },//👌
+    { marca: 'Zanella', modelo: 'HOT', cilindrada: '90cc', Imagen: './assets/images/ZanellaHOT90.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZB Z3 F', cilindrada: '110cc', Imagen: './assets/images/ZanellaZBZ3F110.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZT', cilindrada: '150cc', Imagen: './assets/images/ZanellaZT150.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZR LT', cilindrada: '250cc', Imagen: './assets/images/ZanellaZRLT250.webp' },//👌
+    { marca: 'Zanella', modelo: 'ZR OHC', cilindrada: '200cc', Imagen: './assets/images/ZanellaOHCT200.webp' },//👌
+    { marca: 'Zanella', modelo: 'Ceccato', cilindrada: '150cc', Imagen: './assets/images/ZanellaCeccatoR150.webp' },//👌
+    { marca: 'Zanella', modelo: 'Sapucai FULL', cilindrada: '150cc', Imagen: './assets/images/ZanellaSapucaiFULL150.webp' },//👌
+    { marca: 'Zanella', modelo: 'RX R7 FULL', cilindrada: '150cc', Imagen: './assets/images/ZanellaRXZ7FULL150.webp' },//👌
+    { marca: 'Zanella', modelo: 'Ceccato X', cilindrada: '250cc', Imagen: './assets/images/ZanellaCeccatoX250.webp' },//👌
+    { marca: 'Zanella', modelo: 'Ceccato Serie 60', cilindrada: '', Imagen: './assets/images/ZanellaCeccatoSerie60.webp' },//👌
+    { marca: 'Zanella', modelo: 'Patagonian Eagle ST', cilindrada: '150cc', Imagen: './assets/images/ZanellaPatagonianEagleST150.webp' },//👌
+    { marca: 'Zanella', modelo: 'Cruiser X1', cilindrada: '170cc', Imagen: './assets/images/ZanellaCruiserX1170.webp' },//👌
+    { marca: 'Zanella', modelo: 'Styler Exclusive', cilindrada: '150cc', Imagen: './assets/images/ZanellaStylerExclusive150.webp' },//👌
+    { marca: 'Zanella', modelo: 'Cruiser X', cilindrada: '150cc', Imagen: './assets/images/ZanellaCruiserX150.webp' },//👌
     { marca: 'Zanella', modelo: 'Exclusive', cilindrada: '150cc', Imagen: './assets/images/ZanellaExclusive150.png' },//👌
-    { marca: 'Zanella', modelo: 'Styler RS', cilindrada: '150cc', Imagen: './assets/images/ZanellaStylerRS150.WEBP' },//👌
+    { marca: 'Zanella', modelo: 'Styler RS', cilindrada: '150cc', Imagen: './assets/images/ZanellaStylerRS150.webp' },//👌
 
 
     { marca: 'Corven', modelo: 'TRIAX R3', cilindrada: '150cc', Imagen: './assets/images/CorvenTRIAXR3150.webp' },//
@@ -54,7 +54,7 @@ const Motos = [
     { marca: 'Bajaj', modelo: 'V15 ', cilindrada: '', Imagen: './assets/images/BajajV15.png' },
 
 
-    { marca: 'Mondial', modelo: 'MD', cilindrada: '150cc', Imagen: './assets/images/MondialMD150.WEBP' },//👌
+    { marca: 'Mondial', modelo: 'MD', cilindrada: '150cc', Imagen: './assets/images/MondialMD150.webp' },//👌
     { marca: 'Mondial', modelo: 'Alegro', cilindrada: '150cc', Imagen: './assets/images/MondialAlegro150.webp' },
     { marca: 'Mondial', modelo: 'Max', cilindrada: '110cc', Imagen: './assets/images/MONDIALMAX110.webp' },
     { marca: 'Mondial', modelo: 'DAX', cilindrada: '70cc', Imagen: './assets/images/MondialDAX70.webp' },
