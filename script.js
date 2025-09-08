@@ -136,7 +136,7 @@ function cargarOpciones() {
 
             setTimeout(() => {
                 cargarOpciones();
-            }, 100);
+            }, 1500);
         };
     });
 }
